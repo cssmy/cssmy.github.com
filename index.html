@@ -3,9 +3,19 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>UCSS</title>
-        <link rel="stylesheet" href="/U.css">
-        <script src="/html5.js"></script>
+        <title>CSS</title>
+        <link rel="stylesheet" href="http://necolas.github.io/normalize.css/1.1.2/normalize.css">
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <style>
+            #boxsize button,
+            #boxsize input,
+            #boxsize select,
+            #boxsize textarea {
+                width: 200px;
+                padding: 5px;
+                border: 1px solid #333;
+            }
+        </style>
     </head>
     <body>
         <h1>Heading 1</h1>
@@ -85,6 +95,12 @@
         The <u>u element</u> example<br>
         The <var>var element</var> example
         </p>
+
+        <h1>Template content</h1>
+        <template>
+            <h1>{{title}}</h2>
+            <content></content>
+        </template>
 
         <h1>Embedded content</h1>
 
